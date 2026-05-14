@@ -110,7 +110,7 @@ class LineChartSample extends StatelessWidget {
               FlSpot(1, 3),
               FlSpot(2, 2),
               FlSpot(3, 5),
-              FlSpot(4, 3),
+              FlSpot(4, 3), 
             ],
             isCurved: true,
             gradient: LinearGradient(
