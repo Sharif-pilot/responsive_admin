@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 class InboxScreen extends StatelessWidget {
-  final messages = [
+  final List<Map<String,dynamic>>messages = [
     {"from": "Admin", "subject": "System Update", "unread": true},
     {"from": "Support", "subject": "Ticket Resolved", "unread": false},
   ];
+
+    InboxScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,6 +5,8 @@ class FinanceScreen extends StatelessWidget {
     {"id": "INV002", "status": "Pending"},
   ];
 
+    FinanceScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
