@@ -23,50 +23,39 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Advanced Dashboard"),
-        centerTitle: true,
-        backgroundColor: Colors.blueAccent,
-      ),
-      body: SingleChildScrollView(
+      drawer: Drawer(child: ListView(children: [ListTile(title: Text("Users")), ListTile(title: Text("Settings"))])),
+      appBar: AppBar(title: Text("Admin Dashboard")),
+      body: GridView.count(
+        crossAxisCount: 2,
         padding: EdgeInsets.all(16),
-        child: Column(
-          children: [
-            _buildCard("Bar Chart", BarChartSample()),
-            SizedBox(height: 20),
-            _buildCard("Pie Chart", PieChartSample()),
-            SizedBox(height: 20),
-            _buildCard("Line Chart", LineChartSample()),
-            SizedBox(height: 20),
-            _buildCard("Scatter Chart", ScatterChartSample()),
-          ],
-        ),
+        children: [
+          _buildCard("Users", Icons.people, Colors.blue),
+          _buildCard("Revenue", Icons.attach_money, Colors.green),
+          _buildCard("Orders", Icons.shopping_cart, Colors.orange),
+          _buildCard("Reports", Icons.bar_chart, Colors.purple),
+        ],
       ),
     );
   }
 
-  Widget _buildCard(String title, Widget chart) {
+  Widget _buildCard(String title, IconData icon, Color color) {
     return Card(
       elevation: 6,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      color: Color(0xFF2A2A3D),
-      child: Padding(
-        padding: EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Text(title,
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      child: InkWell(
+        onTap: () {},
+        child: Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            Icon(icon, size: 48, color: color),
             SizedBox(height: 12),
-            SizedBox(height: 200, child: chart),
-          ],
+            Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+          ]),
         ),
       ),
     );
   }
 }
+
 
 // --- Chart Samples ---
 
@@ -123,7 +112,7 @@ class LineChartSample extends StatelessWidget {
           ),
         ],
         titlesData: FlTitlesData(show: true),
-        gridData: FlGridData(show: true), 
+        gridData: FlGridData(show: true),
       ),
     );
   }
