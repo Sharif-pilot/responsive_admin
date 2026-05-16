@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
+import 'app_drawer.dart';
+
 class ReportScreen extends StatelessWidget {
   final reportData = [
     {"date": "2026-05-01", "sales": 1200, "orders": 45},
@@ -69,6 +71,7 @@ class ReportScreen extends StatelessWidget {
           ],
         ),
       ),
+      drawer: AdminDrawer(currentRoute: '/reports'),
     );
   }
 
