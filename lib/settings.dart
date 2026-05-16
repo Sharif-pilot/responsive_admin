@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/app_drawer.dart';
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
@@ -20,7 +21,9 @@ class SettingsScreen extends StatelessWidget {
           Center(child: Text("Security Options")),
           Center(child: Text("Notification Preferences")),
         ]),
+        drawer: AdminDrawer(currentRoute: '/settings'),
       ),
+      
     );
   }
 }
