@@ -58,7 +58,7 @@ class LoginScreenState extends State<LoginScreen> {
                 ElevatedButton(
                   child: Text("Login"),
                   onPressed: () {
-                   Navigator.of(context).push(MaterialPageRoute(builder: (_)=>DashboardScreen()));
+                   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)=>DashboardScreen()));
                   },
                 ),
               ]),
