@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/app_drawer.dart';
 class PermissionScreen extends StatefulWidget {
   const PermissionScreen({super.key});
 
@@ -41,6 +42,7 @@ class PermissionScreenState extends State<PermissionScreen> {
           }).toList(),
         ),
       ),
+      drawer: AdminDrawer(currentRoute: '/permissions'),
     );
   }
 }

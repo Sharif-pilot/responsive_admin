@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/app_drawer.dart';
 class ContentScreen extends StatelessWidget {
   final items = ["Report.pdf", "Image.png", "Data.csv"];
 
@@ -19,6 +20,7 @@ class ContentScreen extends StatelessWidget {
           ),
         ),
       ),
+      drawer: AdminDrawer(currentRoute: '/content'),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.upload),
         onPressed: () {},

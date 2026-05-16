@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/app_drawer.dart';
 class FinanceScreen extends StatelessWidget {
   final invoices = [
     {"id": "INV001", "status": "Paid"},
@@ -21,6 +22,7 @@ class FinanceScreen extends StatelessWidget {
           ),
         ),
       ),
+      drawer: AdminDrawer(currentRoute: '/finance'),
     );
   }
 }
