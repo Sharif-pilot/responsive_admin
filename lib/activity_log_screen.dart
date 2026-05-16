@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ActivityLogScreen extends StatelessWidget {
-  final activities = [
+  final List<Map<String,dynamic>>activities = [
     {
       "icon": Icons.login,
       "title": "User Login",
