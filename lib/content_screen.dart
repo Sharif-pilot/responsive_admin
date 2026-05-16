@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 class ContentScreen extends StatelessWidget {
   final items = ["Report.pdf", "Image.png", "Data.csv"];
 
+  const ContentScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
