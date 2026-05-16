@@ -81,6 +81,8 @@ class BarChartSample extends StatelessWidget {
 }
 
 class PieChartSample extends StatelessWidget {
+  const PieChartSample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return PieChart(
