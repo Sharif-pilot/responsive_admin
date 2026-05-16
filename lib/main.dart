@@ -6,6 +6,8 @@ void main() {
 }
 
 class DashboardApp extends StatelessWidget {
+  const DashboardApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +22,8 @@ class DashboardApp extends StatelessWidget {
 }
 
 class DashboardScreen extends StatelessWidget {
+  const DashboardScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,6 +64,8 @@ class DashboardScreen extends StatelessWidget {
 // --- Chart Samples ---
 
 class BarChartSample extends StatelessWidget {
+  const BarChartSample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BarChart(
