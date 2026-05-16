@@ -8,7 +8,7 @@ class ReportScreen extends StatelessWidget {
     {"date": "2026-05-03", "sales": 1500, "orders": 52},
   ];
 
-  const ReportScreen({super.key});
+    ReportScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
