@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/app_drawer.dart';
 
 class ProfileScreen extends StatelessWidget {
   final profile = {
@@ -82,6 +83,7 @@ class ProfileScreen extends StatelessWidget {
           ],
         ),
       ),
+      drawer: AdminDrawer(currentRoute: '/profile'),
     );
   }
 }
