@@ -9,7 +9,7 @@ class ProfileScreen extends StatelessWidget {
     "avatar": "https://i.pravatar.cc/150?img=3",
   };
 
-  const ProfileScreen({super.key});
+    ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
