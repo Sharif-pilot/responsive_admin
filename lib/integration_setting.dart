@@ -64,6 +64,7 @@ class IntegrationSettingsScreenState extends State<IntegrationSettingsScreen> {
           );
         }).toList(),
       ),
+      drawer: AdminDrawer(currentRoute: '/integrations'),
     );
   }
 }
