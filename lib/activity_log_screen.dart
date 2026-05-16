@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_drawer.dart';
+
 class ActivityLogScreen extends StatelessWidget {
   final List<Map<String,dynamic>>activities = [
     {
@@ -63,6 +65,7 @@ class ActivityLogScreen extends StatelessWidget {
           );
         },
       ),
+      drawer: AdminDrawer(currentRoute: '/activity'),
     );
   }
 }
