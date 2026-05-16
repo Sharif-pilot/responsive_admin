@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/app_drawer.dart';
 class RoleScreen extends StatelessWidget {
   final roles = ["Admin", "Editor", "Viewer"];
 
@@ -27,6 +28,7 @@ class RoleScreen extends StatelessWidget {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Add new role clicked")));
         },
       ),
+      drawer: AdminDrawer(currentRoute: '/roles'),
     );
   }
 }
