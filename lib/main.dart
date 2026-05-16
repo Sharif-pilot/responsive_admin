@@ -1,12 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:responsive_admin/content_screen.dart';
+import 'package:responsive_admin/finance_screen.dart';
+import 'package:responsive_admin/inbox_screen.dart';
+import 'package:responsive_admin/login.dart';
+import 'package:responsive_admin/permission.dart';
+import 'package:responsive_admin/report_screen.dart';
+import 'package:responsive_admin/role.dart';
+import 'package:responsive_admin/settings.dart';
+import 'package:responsive_admin/user_list.dart';
+
+import 'activity_log_screen.dart';
+import 'create_profile.dart';
+import 'integration_setting.dart';
 
 void main() {
-  runApp(DashboardApp());
+  runApp(MyApp());
 }
 
-class DashboardApp extends StatelessWidget {
-  const DashboardApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +27,23 @@ class DashboardApp extends StatelessWidget {
       title: 'Advanced Dashboard',
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.blueAccent,
-        scaffoldBackgroundColor: Color(0xFF1E1E2C),
+        scaffoldBackgroundColor: const Color(0xFF1E1E2C),
       ),
-      home: DashboardScreen(),
+      home: LoginScreen(key: const Key('login')),
+      routes: {
+        '/dashboard': (context) => DashboardScreen(),
+        '/profile': (context) => ProfileScreen(),
+        '/reports': (context) => ReportScreen(),
+        '/activity': (context) => ActivityLogScreen(),
+        '/integrations': (context) => IntegrationSettingsScreen(),
+        '/inbox': (context) => InboxScreen(),
+        '/finance': (context) => FinanceScreen(),
+        '/content': (context) => ContentScreen(),
+        '/permissions': (context) => PermissionScreen(),
+        '/roles': (context) => RoleScreen(),
+        '/users': (context) => UserListScreen(),
+        '/settings': (context) => SettingsScreen(),
+      },
     );
   }
 }

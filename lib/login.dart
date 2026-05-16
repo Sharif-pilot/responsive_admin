@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin/main.dart';
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -57,9 +58,7 @@ class LoginScreenState extends State<LoginScreen> {
                 ElevatedButton(
                   child: Text("Login"),
                   onPressed: () {
-                    if (_formKey.currentState!.validate()) {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Logging in...")));
-                    }
+                   Navigator.of(context).push(MaterialPageRoute(builder: (_)=>DashboardScreen()));
                   },
                 ),
               ]),
