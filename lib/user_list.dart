@@ -6,6 +6,8 @@ class UserListScreen extends StatelessWidget {
     {"name": "Charlie", "role": "Viewer"},
   ];
 
+    UserListScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
