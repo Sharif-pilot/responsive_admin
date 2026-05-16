@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ThemeAppearanceScreen extends StatefulWidget {
+  const ThemeAppearanceScreen({super.key});
+
   @override
-  _ThemeAppearanceScreenState createState() => _ThemeAppearanceScreenState();
+  ThemeAppearanceScreenState createState() => ThemeAppearanceScreenState();
 }
 
-class _ThemeAppearanceScreenState extends State<ThemeAppearanceScreen> {
+class ThemeAppearanceScreenState extends State<ThemeAppearanceScreen> {
   bool _isDarkMode = false;
   Color _accentColor = Colors.blueAccent;
   double _fontSize = 16;
