@@ -54,17 +54,86 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(child: ListView(children: [ListTile(title: Text("Users")), ListTile(title: Text("Settings"))])),
-      appBar: AppBar(title: Text("Admin Dashboard")),
-      body: GridView.count(
-        crossAxisCount: 2,
-        padding: EdgeInsets.all(16),
-        children: [
-          _buildCard("Users", Icons.people, Colors.blue),
-          _buildCard("Revenue", Icons.attach_money, Colors.green),
-          _buildCard("Orders", Icons.shopping_cart, Colors.orange),
-          _buildCard("Reports", Icons.bar_chart, Colors.purple),
-        ],
+      drawer: const AdminDrawer(currentRoute: '/dashboard'),
+      appBar: AppBar(title: const Text("Admin Dashboard")),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            // Summary cards
+            GridView.count(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              crossAxisCount: 2,
+              crossAxisSpacing: 16,
+              mainAxisSpacing: 16,
+              children: [
+                _buildCard("Users", Icons.people, Colors.blue),
+                _buildCard("Revenue", Icons.attach_money, Colors.green),
+                _buildCard("Orders", Icons.shopping_cart, Colors.orange),
+                _buildCard("Reports", Icons.bar_chart, Colors.purple),
+              ],
+            ),
+            const SizedBox(height: 20),
+
+            // Charts
+            Card(
+              elevation: 6,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: const [
+                    Text("Bar Chart", style: TextStyle(fontWeight: FontWeight.bold)),
+                    SizedBox(height: 200, child: BarChartSample()),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              elevation: 6,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: const [
+                    Text("Pie Chart", style: TextStyle(fontWeight: FontWeight.bold)),
+                    SizedBox(height: 200, child: PieChartSample()),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              elevation: 6,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: const [
+                    Text("Line Chart", style: TextStyle(fontWeight: FontWeight.bold)),
+                    SizedBox(height: 200, child: LineChartSample()),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              elevation: 6,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: const [
+                    Text("Scatter Chart", style: TextStyle(fontWeight: FontWeight.bold)),
+                    SizedBox(height: 200, child: ScatterChartSample()),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -78,14 +147,15 @@ class DashboardScreen extends StatelessWidget {
         child: Center(
           child: Column(mainAxisSize: MainAxisSize.min, children: [
             Icon(icon, size: 48, color: color),
-            SizedBox(height: 12),
-            Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 12),
+            Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
           ]),
         ),
       ),
     );
   }
 }
+
 
 
 // --- Chart Samples ---
