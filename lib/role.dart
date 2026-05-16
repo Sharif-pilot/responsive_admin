@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 class RoleScreen extends StatelessWidget {
   final roles = ["Admin", "Editor", "Viewer"];
 
+  const RoleScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
