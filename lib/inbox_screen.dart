@@ -59,8 +59,6 @@ class InboxScreen extends StatelessWidget {
   }
 }
 
-
-
 class MessageDetailScreen extends StatelessWidget {
   final Map<String, dynamic> message;
 
