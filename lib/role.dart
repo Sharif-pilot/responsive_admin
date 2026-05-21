@@ -17,7 +17,7 @@ class RoleScreen extends StatelessWidget {
             title: Text(roles[i]),
             trailing: Row(mainAxisSize: MainAxisSize.min, children: [
               IconButton(icon: Icon(Icons.edit), onPressed: () {}),
-              IconButton(icon: Icon(Icons.delete), onPressed: () {}),
+              IconButton(icon: Icon(Icons.delete), onPressed: () {}), 
             ]),
           ),
         ),
