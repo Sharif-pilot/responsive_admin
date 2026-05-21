@@ -5,7 +5,7 @@ class UserListScreen extends StatelessWidget {
     {"name": "Alice", "role": "Admin"},
     {"name": "Bob", "role": "Editor"},
     {"name": "Charlie", "role": "Viewer"},
-  ];
+  ]; 
 
     UserListScreen({super.key});
 
