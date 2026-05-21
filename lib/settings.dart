@@ -21,7 +21,7 @@ class SettingsScreen extends StatelessWidget {
           Center(child: Text("Security Options")),
           Center(child: Text("Notification Preferences")),
         ]),
-        drawer: AdminDrawer(currentRoute: '/settings'),
+        drawer: AdminDrawer(currentRoute: '/settings'), 
       ),
       
     );

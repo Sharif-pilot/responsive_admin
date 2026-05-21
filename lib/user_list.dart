@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_admin/app_drawer.dart'; 
+import 'package:responsive_admin/app_drawer.dart';
 class UserListScreen extends StatelessWidget {
   final users = [
     {"name": "Alice", "role": "Admin"},
