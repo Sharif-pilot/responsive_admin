@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
         '/permissions': (context) => PermissionScreen(),
         '/roles': (context) => RoleScreen(),
         '/users': (context) => UserListScreen(),
-        '/settings': (context) => SettingsScreen(),
+        '/settings': (context) => SettingsScreen(), 
       },
     );
   }
