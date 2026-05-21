@@ -42,7 +42,7 @@ class PermissionScreenState extends State<PermissionScreen> {
           }).toList(),
         ),
       ),
-      drawer: AdminDrawer(currentRoute: '/permissions'), 
+      drawer: AdminDrawer(currentRoute: '/permissions'),
     );
   }
 }
