@@ -44,7 +44,6 @@ class MyApp extends StatelessWidget {
         '/roles': (context) => RoleScreen(),
         '/users': (context) => UserListScreen(),
         '/settings': (context) => SettingsScreen(),
-        
       },
     );
   }
