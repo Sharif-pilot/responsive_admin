@@ -79,7 +79,7 @@ class MessageDetailScreen extends StatelessWidget {
             const SizedBox(height: 12),
             Expanded(
               child: SingleChildScrollView(
-                child: Text(
+                child: Text( 
                   message["body"]!,
                   style: const TextStyle(fontSize: 14, height: 1.5),
                 ),
