@@ -19,7 +19,7 @@ class ThemeAppearanceScreenState extends State<ThemeAppearanceScreen> {
     Colors.orangeAccent,
     Colors.redAccent,
   ];
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
