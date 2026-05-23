@@ -32,6 +32,3 @@ class RoleScreen extends StatelessWidget {
     );
   }
 } 
-
-
-
