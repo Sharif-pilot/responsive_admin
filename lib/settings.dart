@@ -23,7 +23,6 @@ class SettingsScreen extends StatelessWidget {
         ]),
         drawer: AdminDrawer(currentRoute: '/settings'),
       ),
-      
     );
   }
 }
