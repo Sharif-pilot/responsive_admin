@@ -23,7 +23,7 @@ class FinanceScreen extends StatelessWidget {
         ),
       ),
       drawer: AdminDrawer(currentRoute: '/finance'),
+
     );
   }
 }
- 
