@@ -10,7 +10,6 @@ class ReportScreen extends StatelessWidget {
     {"date": "2026-05-03", "sales": 1500, "orders": 52},
   ];
 
-
     ReportScreen({super.key});
 
   @override
