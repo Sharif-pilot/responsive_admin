@@ -92,7 +92,7 @@ class ReportScreen extends StatelessWidget {
       ),
     );
   }
-
+ 
   LineChartData _lineChartData() {
     return LineChartData(
       lineBarsData: [
@@ -116,4 +116,3 @@ class ReportScreen extends StatelessWidget {
   }
 }
 
- 
