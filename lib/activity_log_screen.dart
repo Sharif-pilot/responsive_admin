@@ -29,7 +29,7 @@ class ActivityLogScreen extends StatelessWidget {
       "time": "09:45 AM"
     },
   ];
-
+ 
     ActivityLogScreen({super.key});
 
   @override
