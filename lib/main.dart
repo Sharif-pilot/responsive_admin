@@ -16,7 +16,7 @@ import 'create_profile.dart';
 import 'integration_setting.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp()); 
 }
 
 class MyApp extends StatelessWidget {

@@ -22,7 +22,7 @@ class ActivityLogScreen extends StatelessWidget {
       "detail": "Invoice INV002 removed by Editor",
       "time": "09:30 AM"
     },
-    { 
+    {
       "icon": Icons.settings,
       "title": "Settings Changed",
       "detail": "Theme switched to Dark Mode",
