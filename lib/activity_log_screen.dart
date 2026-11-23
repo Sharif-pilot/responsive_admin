@@ -17,11 +17,11 @@ class ActivityLogScreen extends StatelessWidget {
       "time": "09:15 AM"
     },
     {
-      "icon": Icons.delete,
+      "icon": Icons.delete, 
       "title": "Record Deleted",
       "detail": "Invoice INV002 removed by Editor",
       "time": "09:30 AM"
-    }, 
+    },
     {
       "icon": Icons.settings,
       "title": "Settings Changed",
