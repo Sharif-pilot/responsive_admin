@@ -9,7 +9,7 @@ class ActivityLogScreen extends StatelessWidget {
       "title": "User Login",
       "detail": "Sharif logged in from Kabul",
       "time": "09:00 AM"
-    }, 
+    },
     {
       "icon": Icons.edit,
       "title": "Role Updated",
@@ -33,7 +33,7 @@ class ActivityLogScreen extends StatelessWidget {
     ActivityLogScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
       body: ListView.builder(
