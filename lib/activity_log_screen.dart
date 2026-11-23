@@ -9,9 +9,9 @@ class ActivityLogScreen extends StatelessWidget {
       "title": "User Login",
       "detail": "Sharif logged in from Kabul",
       "time": "09:00 AM"
-    },
+    }, 
     {
-      "icon": Icons.edit, 
+      "icon": Icons.edit,
       "title": "Role Updated",
       "detail": "Admin role permissions changed",
       "time": "09:15 AM"
