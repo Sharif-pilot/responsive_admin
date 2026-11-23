@@ -27,7 +27,7 @@ class ActivityLogScreen extends StatelessWidget {
       "title": "Settings Changed",
       "detail": "Theme switched to Dark Mode",
       "time": "09:45 AM"
-    },  
+    },
   ];
 
     ActivityLogScreen({super.key});
@@ -37,7 +37,7 @@ class ActivityLogScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
       body: ListView.builder(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(16), 
         itemCount: activities.length,
         itemBuilder: (context, i) {
           final activity = activities[i];
