@@ -27,13 +27,13 @@ class ActivityLogScreen extends StatelessWidget {
       "title": "Settings Changed",
       "detail": "Theme switched to Dark Mode",
       "time": "09:45 AM"
-    },
+    }, 
   ];
 
     ActivityLogScreen({super.key});
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
       body: ListView.builder(
