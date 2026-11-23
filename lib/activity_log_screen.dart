@@ -27,10 +27,10 @@ class ActivityLogScreen extends StatelessWidget {
       "title": "Settings Changed",
       "detail": "Theme switched to Dark Mode",
       "time": "09:45 AM"
-    }, 
+    },
   ];
 
-    ActivityLogScreen({super.key});
+    ActivityLogScreen({super.key}); 
 
   @override
   Widget build(BuildContext context) {
