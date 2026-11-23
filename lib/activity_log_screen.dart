@@ -30,7 +30,7 @@ class ActivityLogScreen extends StatelessWidget {
     },
   ];
 
-    ActivityLogScreen({super.key}); 
+    ActivityLogScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class ActivityLogScreen extends StatelessWidget {
       appBar: AppBar(title: Text("Activity Log")),
       body: ListView.builder(
         padding: EdgeInsets.all(16),
-        itemCount: activities.length,
+        itemCount: activities.length, 
         itemBuilder: (context, i) {
           final activity = activities[i];
           return Card(
