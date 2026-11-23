@@ -25,7 +25,7 @@ class ActivityLogScreen extends StatelessWidget {
     {
       "icon": Icons.settings,
       "title": "Settings Changed",
-      "detail": "Theme switched to Dark Mode", 
+      "detail": "Theme switched to Dark Mode",  
       "time": "09:45 AM"
     },
   ];
