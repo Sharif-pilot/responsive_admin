@@ -39,8 +39,8 @@ class ActivityLogScreen extends StatelessWidget {
       body: ListView.builder(
         padding: EdgeInsets.all(16),
         itemCount: activities.length,
-        itemBuilder: (context, i) {
-          final activity = activities[i];  
+        itemBuilder: (context, i) { 
+          final activity = activities[i];
           return Card(
             elevation: 4,
             margin: EdgeInsets.symmetric(vertical: 8),
