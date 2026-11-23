@@ -26,7 +26,7 @@ class ActivityLogScreen extends StatelessWidget {
       "icon": Icons.settings,
       "title": "Settings Changed",
       "detail": "Theme switched to Dark Mode",
-      "time": "09:45 AM"
+      "time": "09:45 AM" 
     },
   ];
 
@@ -44,7 +44,7 @@ class ActivityLogScreen extends StatelessWidget {
           return Card(
             elevation: 4,
             margin: EdgeInsets.symmetric(vertical: 8),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)), 
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ExpansionTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.blueAccent.withOpacity(0.1),
