@@ -201,8 +201,8 @@ class LineChartSample extends StatelessWidget {
     return LineChart(
       LineChartData(
         lineBarsData: [
-          LineChartBarData( 
-            spots: [
+          LineChartBarData(
+            spots: [ 
               FlSpot(0, 1),
               FlSpot(1, 3),
               FlSpot(2, 2),
