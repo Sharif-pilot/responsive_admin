@@ -196,12 +196,12 @@ class PieChartSample extends StatelessWidget {
 class LineChartSample extends StatelessWidget {
   const LineChartSample({super.key});
 
-  @override 
+  @override
   Widget build(BuildContext context) {
     return LineChart(
       LineChartData(
         lineBarsData: [
-          LineChartBarData(
+          LineChartBarData( 
             spots: [
               FlSpot(0, 1),
               FlSpot(1, 3),
