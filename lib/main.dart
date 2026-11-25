@@ -42,8 +42,8 @@ class MyApp extends StatelessWidget {
         '/content': (context) => ContentScreen(),
         '/permissions': (context) => PermissionScreen(),
         '/roles': (context) => RoleScreen(),
-        '/users': (context) => UserListScreen(), 
-        '/settings': (context) => SettingsScreen(),
+        '/users': (context) => UserListScreen(),
+        '/settings': (context) => SettingsScreen(), 
       },
     );
   }
