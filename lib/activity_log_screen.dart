@@ -36,8 +36,8 @@ class ActivityLogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
-      body: ListView.builder( 
-        padding: EdgeInsets.all(16),
+      body: ListView.builder(
+        padding: EdgeInsets.all(16), 
         itemCount: activities.length,
         itemBuilder: (context, i) {
           final activity = activities[i];
