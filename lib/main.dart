@@ -39,11 +39,11 @@ class MyApp extends StatelessWidget {
         '/integrations': (context) => IntegrationSettingsScreen(),
         '/inbox': (context) => InboxScreen(),
         '/finance': (context) => FinanceScreen(),
-        '/content': (context) => ContentScreen(),
+        '/content': (context) => ContentScreen(), 
         '/permissions': (context) => PermissionScreen(),
         '/roles': (context) => RoleScreen(),
         '/users': (context) => UserListScreen(),
-        '/settings': (context) => SettingsScreen(), 
+        '/settings': (context) => SettingsScreen(),
       },
     );
   }
