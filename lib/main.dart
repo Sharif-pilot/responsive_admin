@@ -167,7 +167,7 @@ class BarChartSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BarChart(
-      BarChartData( 
+      BarChartData(  
         barGroups: [
           BarChartGroupData(x: 0, barRods: [BarChartRodData(toY: 8, color: Colors.blueAccent)]),
           BarChartGroupData(x: 1, barRods: [BarChartRodData(toY: 10, color: Colors.greenAccent)]),
