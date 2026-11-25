@@ -32,7 +32,7 @@ class ActivityLogScreen extends StatelessWidget {
 
     ActivityLogScreen({super.key});
 
-  @override
+  @override 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
@@ -40,7 +40,7 @@ class ActivityLogScreen extends StatelessWidget {
         padding: EdgeInsets.all(16),
         itemCount: activities.length,
         itemBuilder: (context, i) {
-          final activity = activities[i];  
+          final activity = activities[i];
           return Card(
             elevation: 4,
             margin: EdgeInsets.symmetric(vertical: 8),
