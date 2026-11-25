@@ -28,12 +28,12 @@ class MyApp extends StatelessWidget {
       title: 'Advanced Dashboard',
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.blueAccent,
-        scaffoldBackgroundColor: const Color(0xFF1E1E2C), 
+        scaffoldBackgroundColor: const Color(0xFF1E1E2C),
       ),
       home: LoginScreen(key: const Key('login')),
       routes: {
         '/dashboard': (context) => DashboardScreen(),
-        '/profile': (context) => ProfileScreen(),
+        '/profile': (context) => ProfileScreen(), 
         '/reports': (context) => ReportScreen(),
         '/activity': (context) => ActivityLogScreen(),
         '/integrations': (context) => IntegrationSettingsScreen(),
