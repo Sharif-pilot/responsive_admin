@@ -161,12 +161,12 @@ class DashboardScreen extends StatelessWidget {
 
 // --- Chart Samples ---
 
-class BarChartSample extends StatelessWidget { 
+class BarChartSample extends StatelessWidget {
   const BarChartSample({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BarChart(
+    return BarChart( 
       BarChartData(
         barGroups: [
           BarChartGroupData(x: 0, barRods: [BarChartRodData(toY: 8, color: Colors.blueAccent)]),
