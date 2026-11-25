@@ -165,8 +165,8 @@ class BarChartSample extends StatelessWidget {
   const BarChartSample({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return BarChart(  
+  Widget build(BuildContext context) { 
+    return BarChart(
       BarChartData(
         barGroups: [
           BarChartGroupData(x: 0, barRods: [BarChartRodData(toY: 8, color: Colors.blueAccent)]),
