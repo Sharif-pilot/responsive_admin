@@ -156,9 +156,9 @@ class DashboardScreen extends StatelessWidget {
       ),
     );
   }
-} 
+}
 
-
+ 
 // --- Chart Samples ---
 
 class BarChartSample extends StatelessWidget {
