@@ -37,12 +37,12 @@ class ActivityLogScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
       body: ListView.builder(
-        padding: EdgeInsets.all(16), 
+        padding: EdgeInsets.all(16),
         itemCount: activities.length,
         itemBuilder: (context, i) {
           final activity = activities[i];
           return Card(
-            elevation: 4,
+            elevation: 4, 
             margin: EdgeInsets.symmetric(vertical: 8),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ExpansionTile(
