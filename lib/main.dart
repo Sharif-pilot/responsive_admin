@@ -161,8 +161,8 @@ class DashboardScreen extends StatelessWidget {
 
 // --- Chart Samples ---
 
-class BarChartSample extends StatelessWidget {  
-  const BarChartSample({super.key});
+class BarChartSample extends StatelessWidget {
+  const BarChartSample({super.key}); 
 
   @override
   Widget build(BuildContext context) {
