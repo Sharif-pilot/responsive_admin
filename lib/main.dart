@@ -158,10 +158,10 @@ class DashboardScreen extends StatelessWidget {
   }
 }
 
-   
+
 // --- Chart Samples ---
 
-class BarChartSample extends StatelessWidget {
+class BarChartSample extends StatelessWidget { 
   const BarChartSample({super.key});
 
   @override
