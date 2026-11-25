@@ -202,7 +202,7 @@ class LineChartSample extends StatelessWidget {
       LineChartData(
         lineBarsData: [
           LineChartBarData(
-            spots: [ 
+            spots: [
               FlSpot(0, 1),
               FlSpot(1, 3),
               FlSpot(2, 2),
@@ -225,7 +225,7 @@ class LineChartSample extends StatelessWidget {
     );
   }
 }
-
+ 
 
 class ScatterChartSample extends StatelessWidget {
   const ScatterChartSample({super.key});
