@@ -225,8 +225,8 @@ class LineChartSample extends StatelessWidget {
     );
   }
 }
+ 
 
-   
 class ScatterChartSample extends StatelessWidget {
   const ScatterChartSample({super.key});
 
