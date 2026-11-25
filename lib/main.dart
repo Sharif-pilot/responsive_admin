@@ -30,9 +30,9 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blueAccent,
         scaffoldBackgroundColor: const Color(0xFF1E1E2C),
       ),
-      home: LoginScreen(key: const Key('login')), 
+      home: LoginScreen(key: const Key('login')),
       routes: {
-        '/dashboard': (context) => DashboardScreen(),
+        '/dashboard': (context) => DashboardScreen(), 
         '/profile': (context) => ProfileScreen(),
         '/reports': (context) => ReportScreen(),
         '/activity': (context) => ActivityLogScreen(),
