@@ -41,8 +41,8 @@ class MyApp extends StatelessWidget {
         '/finance': (context) => FinanceScreen(),
         '/content': (context) => ContentScreen(),
         '/permissions': (context) => PermissionScreen(),
-        '/roles': (context) => RoleScreen(), 
-        '/users': (context) => UserListScreen(),
+        '/roles': (context) => RoleScreen(),
+        '/users': (context) => UserListScreen(), 
         '/settings': (context) => SettingsScreen(),
       },
     );
