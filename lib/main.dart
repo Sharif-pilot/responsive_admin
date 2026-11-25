@@ -33,9 +33,9 @@ class MyApp extends StatelessWidget {
       home: LoginScreen(key: const Key('login')),
       routes: {
         '/dashboard': (context) => DashboardScreen(),
-        '/profile': (context) => ProfileScreen(), 
+        '/profile': (context) => ProfileScreen(),
         '/reports': (context) => ReportScreen(),
-        '/activity': (context) => ActivityLogScreen(),
+        '/activity': (context) => ActivityLogScreen(), 
         '/integrations': (context) => IntegrationSettingsScreen(),
         '/inbox': (context) => InboxScreen(),
         '/finance': (context) => FinanceScreen(),
