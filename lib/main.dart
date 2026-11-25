@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         '/reports': (context) => ReportScreen(),
         '/activity': (context) => ActivityLogScreen(),
         '/integrations': (context) => IntegrationSettingsScreen(),
-        '/inbox': (context) => InboxScreen(), 
+        '/inbox': (context) => InboxScreen(),
         '/finance': (context) => FinanceScreen(),
         '/content': (context) => ContentScreen(),
         '/permissions': (context) => PermissionScreen(),
