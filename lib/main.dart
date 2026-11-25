@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/dashboard': (context) => DashboardScreen(),
         '/profile': (context) => ProfileScreen(),
-        '/reports': (context) => ReportScreen(), 
-        '/activity': (context) => ActivityLogScreen(),
+        '/reports': (context) => ReportScreen(),
+        '/activity': (context) => ActivityLogScreen(), 
         '/integrations': (context) => IntegrationSettingsScreen(),
         '/inbox': (context) => InboxScreen(),
         '/finance': (context) => FinanceScreen(),
