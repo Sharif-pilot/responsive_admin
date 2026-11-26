@@ -39,13 +39,13 @@ class ActivityLogScreen extends StatelessWidget {
       body: ListView.builder(
         padding: EdgeInsets.all(16),
         itemCount: activities.length,
-        itemBuilder: (context, i) { 
+        itemBuilder: (context, i) {
           final activity = activities[i];
           return Card(
             elevation: 4,
             margin: EdgeInsets.symmetric(vertical: 8),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            child: ExpansionTile(
+            child: ExpansionTile( 
               leading: CircleAvatar(
                 backgroundColor: Colors.blueAccent.withOpacity(0.1),
                 child: Icon(activity["icon"] as IconData, color: Colors.blueAccent),
