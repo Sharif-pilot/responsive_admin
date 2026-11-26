@@ -61,11 +61,11 @@ class ActivityLogScreen extends StatelessWidget {
                       style: TextStyle(color: Colors.grey[700])),
                 ),
               ],
-            ), 
+            ),
           );
         },
       ),
-      drawer: AdminDrawer(currentRoute: '/activity'),
+      drawer: AdminDrawer(currentRoute: '/activity'), 
     );
   }
 }
