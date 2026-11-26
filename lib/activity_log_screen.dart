@@ -67,7 +67,6 @@ class ActivityLogScreen extends StatelessWidget {
       ),
       drawer: AdminDrawer(currentRoute: '/activity'),
     );
-  }
+  } 
 }
 
-    
