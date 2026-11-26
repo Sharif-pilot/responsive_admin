@@ -53,11 +53,11 @@ class ActivityLogScreen extends StatelessWidget {
               title: Text(activity["title"]!,
                   style: TextStyle(fontWeight: FontWeight.bold)),
               subtitle: Text(activity["time"]!),
-              children: [
+              children: [ 
                 Divider(),
                 Padding(
                   padding: EdgeInsets.all(12),
-                  child: Text(activity["detail"]!, 
+                  child: Text(activity["detail"]!,
                       style: TextStyle(color: Colors.grey[700])),
                 ),
               ],
