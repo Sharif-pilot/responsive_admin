@@ -54,7 +54,7 @@ class ActivityLogScreen extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold)),
               subtitle: Text(activity["time"]!),
               children: [
-                Divider(), 
+                Divider(),  
                 Padding(
                   padding: EdgeInsets.all(12),
                   child: Text(activity["detail"]!,
