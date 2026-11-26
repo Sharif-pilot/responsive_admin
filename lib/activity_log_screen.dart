@@ -69,4 +69,5 @@ class ActivityLogScreen extends StatelessWidget {
     );
   }
 }
+
  
