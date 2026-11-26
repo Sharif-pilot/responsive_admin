@@ -48,7 +48,7 @@ class ActivityLogScreen extends StatelessWidget {
             child: ExpansionTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.blueAccent.withOpacity(0.1),
-                child: Icon(activity["icon"] as IconData, color: Colors.blueAccent),
+                child: Icon(activity["icon"] as IconData, color: Colors.blueAccent), 
               ),
               title: Text(activity["title"]!,
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -58,7 +58,7 @@ class ActivityLogScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(12),
                   child: Text(activity["detail"]!,
-                      style: TextStyle(color: Colors.grey[700])),  
+                      style: TextStyle(color: Colors.grey[700])),
                 ),
               ],
             ),
