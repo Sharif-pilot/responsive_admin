@@ -33,7 +33,7 @@ class ActivityLogScreen extends StatelessWidget {
     ActivityLogScreen({super.key});
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Activity Log")),
       body: ListView.builder(
