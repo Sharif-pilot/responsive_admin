@@ -35,7 +35,7 @@ class ActivityLogScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Activity Log")),
+      appBar: AppBar(title: Text("Activity Log")), 
       body: ListView.builder(
         padding: EdgeInsets.all(16),
         itemCount: activities.length,
@@ -47,7 +47,7 @@ class ActivityLogScreen extends StatelessWidget {
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ExpansionTile(
               leading: CircleAvatar(
-                backgroundColor: Colors.blueAccent.withOpacity(0.1), 
+                backgroundColor: Colors.blueAccent.withOpacity(0.1),
                 child: Icon(activity["icon"] as IconData, color: Colors.blueAccent),
               ),
               title: Text(activity["title"]!,
