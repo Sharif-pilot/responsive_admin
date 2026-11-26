@@ -59,9 +59,9 @@ class ActivityLogScreen extends StatelessWidget {
                   padding: EdgeInsets.all(12),
                   child: Text(activity["detail"]!,
                       style: TextStyle(color: Colors.grey[700])),
-                ),
+                ), 
               ],
-            ), 
+            ),
           );
         },
       ),
