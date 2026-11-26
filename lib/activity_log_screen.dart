@@ -42,9 +42,9 @@ class ActivityLogScreen extends StatelessWidget {
         itemBuilder: (context, i) {
           final activity = activities[i];
           return Card(
-            elevation: 4,
+            elevation: 4, 
             margin: EdgeInsets.symmetric(vertical: 8),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),  
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ExpansionTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.blueAccent.withOpacity(0.1),
