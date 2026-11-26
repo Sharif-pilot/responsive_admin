@@ -58,14 +58,14 @@ class ActivityLogScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(12),
                   child: Text(activity["detail"]!,
-                      style: TextStyle(color: Colors.grey[700])),
+                      style: TextStyle(color: Colors.grey[700])), 
                 ),
               ],
             ),
           );
         },
       ),
-      drawer: AdminDrawer(currentRoute: '/activity'), 
+      drawer: AdminDrawer(currentRoute: '/activity'),
     );
   }
 }
